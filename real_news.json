@@ -1,0 +1,824 @@
+[
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "www.post-gazette.com",
+    "twitter of real website": "PittsburghPG",
+    "Frequency": 1726
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "www.topix.com",
+    "twitter of real website": "Topix",
+    "Frequency": 228
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "www.wtae.com",
+    "twitter of real website": "WTAE",
+    "Frequency": 39
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "http://cbslocal.com/",
+    "twitter of real website": "cbslocal",
+    "Frequency": 26
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "www.wpxi.com",
+    "twitter of real website": "WPXI",
+    "Frequency": 13
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.mysanantonio.com",
+    "twitter of real website": "mySA",
+    "Frequency": 6146
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.kens5.com",
+    "twitter of real website": "KENS5",
+    "Frequency": 28
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.ksat.com",
+    "twitter of real website": "ksatnews",
+    "Frequency": 28
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "foxsanantonio.com",
+    "twitter of real website": "KABBFOX29",
+    "Frequency": 10
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.sanantoniopost.com",
+    "twitter of real website": "",
+    "Frequency": 352
+  },
+  {
+    "fake account name": "NewOrleansON",
+    "URL of real websites": "www.nola.com",
+    "twitter of real website": "NOLAnews",
+    "Frequency": 3453
+  },
+  {
+    "fake account name": "NewOrleansON",
+    "URL of real websites": "www.al.com",
+    "twitter of real website": "aldotcom",
+    "Frequency": 94
+  },
+  {
+    "fake account name": "NewOrleansON",
+    "URL of real websites": "blog.nola.com",
+    "twitter of real website": "NOLAnews",
+    "Frequency": 52
+  },
+  {
+    "fake account name": "NewOrleansON",
+    "URL of real websites": "www.nfl.com",
+    "twitter of real website": "NFL",
+    "Frequency": 17
+  },
+  {
+    "fake account name": "NewOrleansON",
+    "URL of real websites": "realestate.nola.com",
+    "twitter of real website": "NOLAnews",
+    "Frequency": 15
+  },
+  {
+    "fake account name": "ElPasoTopNews",
+    "URL of real websites": "www.elpasotimes.com",
+    "twitter of real website": "elpasotimes",
+    "Frequency": 2095
+  },
+  {
+    "fake account name": "ElPasoTopNews",
+    "URL of real websites": "www.usatoday.com",
+    "twitter of real website": "USATODAY",
+    "Frequency": 262
+  },
+  {
+    "fake account name": "ElPasoTopNews",
+    "URL of real websites": "www.lcsun-news.com",
+    "twitter of real website": "CrucesSunNews",
+    "Frequency": 33
+  },
+  {
+    "fake account name": "ElPasoTopNews",
+    "URL of real websites": "twib.in",
+    "twitter of real website": "TWIBnation",
+    "Frequency": 97
+  },
+  {
+    "fake account name": "ElPasoTopNews",
+    "URL of real websites": "www.kvia.com",
+    "twitter of real website": "abc7breaking",
+    "Frequency": 18
+  },
+  {
+    "fake account name": "DailySanJose",
+    "URL of real websites": "www.nbcbayarea.com",
+    "twitter of real website": "nbcbayarea",
+    "Frequency": 316
+  },
+  {
+    "fake account name": "DailySanJose",
+    "URL of real websites": "www.sanjoseinside.com",
+    "twitter of real website": "sanjoseinside",
+    "Frequency": 260
+  },
+  {
+    "fake account name": "DailySanJose",
+    "URL of real websites": "www.sanjose.com",
+    "twitter of real website": "CityofSanJose",
+    "Frequency": 54
+  },
+  {
+    "fake account name": "DailySanJose",
+    "URL of real websites": "www.mercurynews.com",
+    "twitter of real website": "mercnews",
+    "Frequency": 47
+  },
+  {
+    "fake account name": "DailySanJose",
+    "URL of real websites": "bayareane.ws",
+    "twitter of real website": "inavailable",
+    "Frequency": 41
+  },
+  {
+    "fake account name": "ChicagoDailyNew",
+    "URL of real websites": "feedsportal.com",
+    "twitter of real website": "unable to find",
+    "Frequency": 2469
+  },
+  {
+    "fake account name": "ChicagoDailyNew",
+    "URL of real websites": "chicago.suntimes.com",
+    "twitter of real website": "Suntimes",
+    "Frequency": 609
+  },
+  {
+    "fake account name": "ChicagoDailyNew",
+    "URL of real websites": "nbcchicago.com",
+    "twitter of real website": "nbcchicago",
+    "Frequency": 13
+  },
+  {
+    "fake account name": "ChicagoDailyNew",
+    "URL of real websites": "sandiegouniontribune.com",
+    "twitter of real website": "sdut",
+    "Frequency": 5
+  },
+  {
+    "fake account name": "ChicagoDailyNew",
+    "URL of real websites": "healthcare.gov",
+    "twitter of real website": "HealthCareGov",
+    "Frequency": 3
+  },
+  {
+    "fake account name": "DailySanFran",
+    "URL of real websites": "sanantoniopost.com",
+    "twitter of real website": "sanantoniopost",
+    "Frequency": 352
+  },
+  {
+    "fake account name": "DailySanFran",
+    "URL of real websites": "mysanantonio.com",
+    "twitter of real website": "mySA",
+    "Frequency": 23
+  },
+  {
+    "fake account name": "DailySanFran",
+    "URL of real websites": "ksat.com",
+    "twitter of real website": "ksatnews",
+    "Frequency": 3
+  },
+  {
+    "fake account name": "DailySanFran",
+    "URL of real websites": "nytimes.com",
+    "twitter of real website": "nytimes",
+    "Frequency": 2
+  },
+  {
+    "fake account name": "DetroitDailyNew",
+    "URL of real websites": "detroitnews.com",
+    "twitter of real website": "detroitnews",
+    "Frequency": 1839
+  },
+  {
+    "fake account name": "DetroitDailyNew",
+    "URL of real websites": "freep.com",
+    "twitter of real website": "freep",
+    "Frequency": 4
+  },
+  {
+    "fake account name": "DetroitDailyNew",
+    "URL of real websites": "michigan.gov",
+    "twitter of real website": "migov",
+    "Frequency": 2
+  },
+  {
+    "fake account name": "DetroitDailyNew",
+    "URL of real websites": "michigan.com",
+    "twitter of real website": "Michigan_com",
+    "Frequency": 2
+  },
+  {
+    "fake account name": "DetroitDailyNew",
+    "URL of real websites": "detroitnews.stats.com",
+    "twitter of real website": "detroitnews",
+    "Frequency": 2
+  },
+  {
+    "fake account name": "TodayCincinnati",
+    "URL of real websites": "wcpo.com",
+    "twitter of real website": "WCPO",
+    "Frequency": 3072
+  },
+  {
+    "fake account name": "TodayCincinnati",
+    "URL of real websites": "cincinnati.com",
+    "twitter of real website": "Enquirer",
+    "Frequency": 1393
+  },
+  {
+    "fake account name": "TodayCincinnati",
+    "URL of real websites": "usatoday.com",
+    "twitter of real website": "USATODAY",
+    "Frequency": 973
+  },
+  {
+    "fake account name": "TodayCincinnati",
+    "URL of real websites": "courier-journal.com",
+    "twitter of real website": "courierjournal",
+    "Frequency": 10
+  },
+  {
+    "fake account name": "MinneapolisON",
+    "URL of real websites": "startribune.com",
+    "twitter of real website": "StarTribune",
+    "Frequency": 1508
+  },
+  {
+    "fake account name": "MinneapolisON",
+    "URL of real websites": "www.kare11.com",
+    "twitter of real website": "kare11",
+    "Frequency": 35
+  },
+  {
+    "fake account name": "MinneapolisON",
+    "URL of real websites": "www.theroot.com",
+    "twitter of real website": "TheRoot",
+    "Frequency": 23
+  },
+  {
+    "fake account name": "MinneapolisON",
+    "URL of real websites": "http://cbslocal.com/",
+    "twitter of real website": "cbslocal",
+    "Frequency": 20
+  },
+  {
+    "fake account name": "MinneapolisON",
+    "URL of real websites": "kstp.com",
+    "twitter of real website": "KSTP",
+    "Frequency": 17
+  },
+  {
+    "fake account name": "TodayBostonMA",
+    "URL of real websites": "boston.com",
+    "twitter of real website": "BostonDotCom",
+    "Frequency": 898
+  },
+  {
+    "fake account name": "TodayBostonMA",
+    "URL of real websites": "patriotledger.com",
+    "twitter of real website": "PatriotLedger",
+    "Frequency": 515
+  },
+  {
+    "fake account name": "TodayBostonMA",
+    "URL of real websites": "www.telegram.com",
+    "twitter of real website": "telegramdotcom",
+    "Frequency": 465
+  },
+  {
+    "fake account name": "TodayBostonMA",
+    "URL of real websites": "www.wcvb.com",
+    "twitter of real website": "WCVB",
+    "Frequency": 150
+  },
+  {
+    "fake account name": "TodayBostonMA",
+    "URL of real websites": "whdh.com",
+    "twitter of real website": "7News",
+    "Frequency": 18
+  },
+  {
+    "fake account name": "KansasDailyNews",
+    "URL of real websites": "ksnt.com",
+    "twitter of real website": "KSNTNews",
+    "Frequency": 14617
+  },
+  {
+    "fake account name": "KansasDailyNews",
+    "URL of real websites": "kctv5.com",
+    "twitter of real website": "KCTV5",
+    "Frequency": 1187
+  },
+  {
+    "fake account name": "KansasDailyNews",
+    "URL of real websites": "kmbc.com",
+    "twitter of real website": "kmbc",
+    "Frequency": 612
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "www.post-gazette.com",
+    "twitter of real website": "PittsburghPG",
+    "Frequency": 1838
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "topix.com",
+    "twitter of real website": "Topix",
+    "Frequency": 228
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "wtae.com",
+    "twitter of real website": "WTAE",
+    "Frequency": 39
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "http://cbslocal.com",
+    "twitter of real website": "cbslocal",
+    "Frequency": 26
+  },
+  {
+    "fake account name": "TodayPittsburgh",
+    "URL of real websites": "wpxi.com",
+    "twitter of real website": "WPXI",
+    "Frequency": 13
+  },
+  {
+    "fake account name": "Seattle_Post",
+    "URL of real websites": "seattletimes.com",
+    "twitter of real website": "seattletimes",
+    "Frequency": 3222
+  },
+  {
+    "fake account name": "Seattle_Post",
+    "URL of real websites": "www.seattlepi.com",
+    "twitter of real website": "seattlepi",
+    "Frequency": 1094
+  },
+  {
+    "fake account name": "Seattle_Post",
+    "URL of real websites": "blogs.seattletimes.com",
+    "twitter of real website": "seattletimes",
+    "Frequency": 48
+  },
+  {
+    "fake account name": "Seattle_Post",
+    "URL of real websites": "king5.com",
+    "twitter of real website": "KING5Seattle",
+    "Frequency": 17
+  },
+  {
+    "fake account name": "Seattle_Post",
+    "URL of real websites": "komonews.com",
+    "twitter of real website": "komonews",
+    "Frequency": 12
+  },
+  {
+    "fake account name": "Philadelphia",
+    "URL of real websites": "philadelphia.cbslocal.com",
+    "twitter of real website": "CBSPhilly",
+    "Frequency": 4062
+  },
+  {
+    "fake account name": "Philadelphia",
+    "URL of real websites": "philly.com",
+    "twitter of real website": "phillydotcom",
+    "Frequency": 3669
+  },
+  {
+    "fake account name": "Philadelphia",
+    "URL of real websites": "www.nbcphiladelphia.com",
+    "twitter of real website": "NBCPhiladelphia",
+    "Frequency": 2464
+  },
+  {
+    "fake account name": "Philadelphia",
+    "URL of real websites": "www.inquirer.com",
+    "twitter of real website": "PhillyInquirer",
+    "Frequency": 471
+  },
+  {
+    "fake account name": "Philadelphia",
+    "URL of real websites": "www.phillyvoice.com",
+    "twitter of real website": "thephillyvoice",
+    "Frequency": 57
+  },
+  {
+    "fake account name": "DailyLosAngeles",
+    "URL of real websites": "abc7.com",
+    "twitter of real website": "ABC7",
+    "Frequency": 4169
+  },
+  {
+    "fake account name": "DailyLosAngeles",
+    "URL of real websites": "lat.ms",
+    "twitter of real website": "latimes",
+    "Frequency": 3753
+  },
+  {
+    "fake account name": "DailyLosAngeles",
+    "URL of real websites": "mynewsla.com",
+    "twitter of real website": "MyNewsLA",
+    "Frequency": 2921
+  },
+  {
+    "fake account name": "DailyLosAngeles",
+    "URL of real websites": "ktla.com",
+    "twitter of real website": "KTLA",
+    "Frequency": 2881
+  },
+  {
+    "fake account name": "DailyLosAngeles",
+    "URL of real websites": "www.foxla.com",
+    "twitter of real website": "FOXLA",
+    "Frequency": 1148
+  },
+  {
+    "fake account name": "HoustonTopNews",
+    "URL of real websites": "www.chron.com",
+    "twitter of real website": "HoustonChron",
+    "Frequency": 1810
+  },
+  {
+    "fake account name": "HoustonTopNews",
+    "URL of real websites": "www.click2houston.com",
+    "twitter of real website": "KPRC2",
+    "Frequency": 1729
+  },
+  {
+    "fake account name": "HoustonTopNews",
+    "URL of real websites": "on.khou.com",
+    "twitter of real website": "KHOU",
+    "Frequency": 16
+  },
+  {
+    "fake account name": "HoustonTopNews",
+    "URL of real websites": "abc13.com",
+    "twitter of real website": "abc13houston",
+    "Frequency": 12
+  },
+  {
+    "fake account name": "HoustonTopNews",
+    "URL of real websites": "abc13.co",
+    "twitter of real website": "abc13houston",
+    "Frequency": 10
+  },
+  {
+    "fake account name": "DailySanDiego",
+    "URL of real websites": "www.nbcsandiego.com",
+    "twitter of real website": "nbcsandiego",
+    "Frequency": 3643
+  },
+  {
+    "fake account name": "DailySanDiego",
+    "URL of real websites": "www.cbs8.com",
+    "twitter of real website": "CBS8",
+    "Frequency": 2678
+  },
+  {
+    "fake account name": "DailySanDiego",
+    "URL of real websites": "www.reuters.com",
+    "twitter of real website": "Reuters",
+    "Frequency": 107
+  },
+  {
+    "fake account name": "DailySanDiego",
+    "URL of real websites": "www.sandiegouniontribune.com",
+    "twitter of real website": "sdut",
+    "Frequency": 32
+  },
+  {
+    "fake account name": "DailySanDiego",
+    "URL of real websites": "on.nbc7.com",
+    "twitter of real website": "nbcsandiego",
+    "Frequency": 13
+  },
+  {
+    "fake account name": "DallasTopNews",
+    "URL of real websites": "www.nbcdfw.com",
+    "twitter of real website": "NBCDFW",
+    "Frequency": 4581
+  },
+  {
+    "fake account name": "DallasTopNews",
+    "URL of real websites": "www.star-telegram.com",
+    "twitter of real website": "startelegram",
+    "Frequency": 2771
+  },
+  {
+    "fake account name": "DallasTopNews",
+    "URL of real websites": "www.dallasnews.com",
+    "twitter of real website": "dallasnews",
+    "Frequency": 9
+  },
+  {
+    "fake account name": "WashingtOnline",
+    "URL of real websites": "www.nbcwashington.com",
+    "twitter of real website": "nbcwashington",
+    "Frequency": 3338
+  },
+  {
+    "fake account name": "WashingtOnline",
+    "URL of real websites": "www.washingtonpost.com",
+    "twitter of real website": "washingtonpost",
+    "Frequency": 1222
+  },
+  {
+    "fake account name": "WashingtOnline",
+    "URL of real websites": "www.washingtontimes.com",
+    "twitter of real website": "WashTimes",
+    "Frequency": 446
+  },
+  {
+    "fake account name": "WashingtOnline",
+    "URL of real websites": "on.wusa9.com",
+    "twitter of real website": "wusa9",
+    "Frequency": 33
+  },
+  {
+    "fake account name": "WashingtOnline",
+    "URL of real websites": "www.theroot.com",
+    "twitter of real website": "TheRoot",
+    "Frequency": 28
+  },
+  {
+    "fake account name": "TodayNYCity",
+    "URL of real websites": "www.nydailynews.com",
+    "twitter of real website": "NYDailyNews",
+    "Frequency": 7112
+  },
+  {
+    "fake account name": "TodayNYCity",
+    "URL of real websites": "www.nbcnewyork.com",
+    "twitter of real website": "NBCNewYork",
+    "Frequency": 5274
+  },
+  {
+    "fake account name": "TodayNYCity",
+    "URL of real websites": "nypost.com",
+    "twitter of real website": "nypost",
+    "Frequency": 4498
+  },
+  {
+    "fake account name": "TodayNYCity",
+    "URL of real websites": "nydn.us",
+    "twitter of real website": "nydailynews",
+    "Frequency": 684
+  },
+  {
+    "fake account name": "TodayNYCity",
+    "URL of real websites": "twitter.com",
+    "twitter of real website": "twitter",
+    "Frequency": 16
+  },
+  {
+    "fake account name": "OnlineCleveland",
+    "URL of real websites": "www.cleveland19.com",
+    "twitter of real website": "cleveland19news",
+    "Frequency": 7351
+  },
+  {
+    "fake account name": "OnlineCleveland",
+    "URL of real websites": "www.cleveland.com",
+    "twitter of real website": "clevelanddotcom",
+    "Frequency": 4597
+  },
+  {
+    "fake account name": "OnlineCleveland",
+    "URL of real websites": "www.wkyc.com",
+    "twitter of real website": "wkyc",
+    "Frequency": 299
+  },
+  {
+    "fake account name": "OnlineCleveland",
+    "URL of real websites": "cleveland.com",
+    "twitter of real website": "clevelanddotcom",
+    "Frequency": 249
+  },
+  {
+    "fake account name": "OnlineCleveland",
+    "URL of real websites": "www.usatoday.com",
+    "twitter of real website": "USATODAY",
+    "Frequency": 116
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.mysanantonio.com",
+    "twitter of real website": "mySA",
+    "Frequency": 6146
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.sanantoniopost.com",
+    "twitter of real website": "MoneyBandsKiyah",
+    "Frequency": 352
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.kens5.com",
+    "twitter of real website": "KENS5",
+    "Frequency": 28
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.ksat.com",
+    "twitter of real website": "ksatnews",
+    "Frequency": 28
+  },
+  {
+    "fake account name": "SanAntoTopNews",
+    "URL of real websites": "www.foxsanantonio.com",
+    "twitter of real website": "KABBFOX29",
+    "Frequency": 10
+  },
+  {
+    "fake account name": "PhoenixDailyNew",
+    "URL of real websites": "www.azcentral.com",
+    "twitter of real website": "azcentral",
+    "Frequency": 4944
+  },
+  {
+    "fake account name": "PhoenixDailyNew",
+    "URL of real websites": "www.abc15.com",
+    "twitter of real website": "abc15",
+    "Frequency": 2162
+  },
+  {
+    "fake account name": "PhoenixDailyNew",
+    "URL of real websites": "www.usatoday.com",
+    "twitter of real website": "USATODAY",
+    "Frequency": 199
+  },
+  {
+    "fake account name": "PhoenixDailyNew",
+    "URL of real websites": "www.fox10phoenix.com'",
+    "twitter of real website": "FOX10Phoenix",
+    "Frequency": 13
+  },
+  {
+    "fake account name": "PhoenixDailyNew",
+    "URL of real websites": "www.azfamily.com",
+    "twitter of real website": "azfamily",
+    "Frequency": 11
+  },
+  {
+    "fake account name": "TodayMiami",
+    "URL of real websites": "miami.cbslocal.com",
+    "twitter of real website": "CBSMiami",
+    "Frequency": 3865
+  },
+  {
+    "fake account name": "TodayMiami",
+    "URL of real websites": "www.miamiherald.com",
+    "twitter of real website": "MiamiHerald",
+    "Frequency": 2622
+  },
+  {
+    "fake account name": "TodayMiami",
+    "URL of real websites": "www.floridatoday.com",
+    "twitter of real website": "Florida_Today",
+    "Frequency": 523
+  },
+  {
+    "fake account name": "Atlanta_Online",
+    "URL of real websites": "www.fox5atlanta.com",
+    "twitter of real website": "FOX5Atlanta",
+    "Frequency": 2590
+  },
+  {
+    "fake account name": "Atlanta_Online",
+    "URL of real websites": "www.cbs46.com",
+    "twitter of real website": "cbs46",
+    "Frequency": 627
+  },
+  {
+    "fake account name": "Atlanta_Online",
+    "URL of real websites": "www.atlantaleader.com",
+    "twitter of real website": "not found",
+    "Frequency": 285
+  },
+  {
+    "fake account name": "Atlanta_Online",
+    "URL of real websites": "on-ajc.com",
+    "twitter of real website": "ajc",
+    "Frequency": 238
+  },
+  {
+    "fake account name": "Atlanta_Online",
+    "URL of real websites": "politics.blog.ajc.com",
+    "twitter of real website": "bluestein",
+    "Frequency": 42
+  },
+  {
+    "fake account name": "Baltimore0nline",
+    "URL of real websites": "www.baltimoresun.com",
+    "twitter of real website": "baltimoresun",
+    "Frequency": 2442
+  },
+  {
+    "fake account name": "Baltimore0nline",
+    "URL of real websites": "baltimore.cbslocal.com",
+    "twitter of real website": "wjz",
+    "Frequency": 2149
+  },
+  {
+    "fake account name": "Baltimore0nline",
+    "URL of real websites": "www.wbaltv.com",
+    "twitter of real website": "wbaltv11",
+    "Frequency": 1935
+  },
+  {
+    "fake account name": "Baltimore0nline",
+    "URL of real websites": "bsun.md",
+    "twitter of real website": "baltimoresun",
+    "Frequency": 1543
+  },
+  {
+    "fake account name": "Baltimore0nline",
+    "URL of real websites": "www.huffingtonpost.com",
+    "twitter of real website": "HuffPost",
+    "Frequency": 73
+  },
+  {
+    "fake account name": "OaklandOnline",
+    "URL of real websites": "bayareane.ws",
+    "twitter of real website": "not found",
+    "Frequency": 2461
+  },
+  {
+    "fake account name": "OaklandOnline",
+    "URL of real websites": "www.ktvu.com",
+    "twitter of real website": "KTVU",
+    "Frequency": 238
+  },
+  {
+    "fake account name": "OaklandOnline",
+    "URL of real websites": "www.sfgate.com",
+    "twitter of real website": "SFGate",
+    "Frequency": 219
+  },
+  {
+    "fake account name": "OaklandOnline",
+    "URL of real websites": "www.theoaklandpress.com",
+    "twitter of real website": "TheOaklandPress",
+    "Frequency": 135
+  },
+  {
+    "fake account name": "OaklandOnline",
+    "URL of real websites": "www.theroot.com",
+    "twitter of real website": "TheRoot",
+    "Frequency": 20
+  },
+  {
+    "fake account name": "StLouisOnline",
+    "URL of real websites": "www.stltoday.com",
+    "twitter of real website": "stltoday",
+    "Frequency": 6729
+  },
+  {
+    "fake account name": "StLouisOnline",
+    "URL of real websites": "www.kmov.com",
+    "twitter of real website": "KMOV",
+    "Frequency": 56
+  },
+  {
+    "fake account name": "StLouisOnline",
+    "URL of real websites": "www.stlamerican.com",
+    "twitter of real website": "StLouisAmerican",
+    "Frequency": 40
+  },
+  {
+    "fake account name": "StLouisOnline",
+    "URL of real websites": "on.ksdk.com",
+    "twitter of real website": "ksdknews",
+    "Frequency": 33
+  },
+  {
+    "fake account name": "StLouisOnline",
+    "URL of real websites": "fox2now.com",
+    "twitter of real website": "FOX2now",
+    "Frequency": 19
+  }
+]
