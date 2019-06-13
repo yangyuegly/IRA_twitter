@@ -52,7 +52,7 @@ with open('start_end.json','r') as json_file:
 for i in range(len(news_dates)):
     start[news_dates[i]['AccountName']] = news_dates[i]['Start']
     end[news_dates[i]['AccountName']] = news_dates[i]['End']
-print(start,end)
+#print(start,end)
     
     
 #get real news sources associated with fake accounts
@@ -133,7 +133,6 @@ page_1_layout = html.Div([
 
    
     
-#---------------------------------------------end graph
 
 
 
@@ -143,7 +142,7 @@ page_1_layout = html.Div([
     [dash.dependencies.Output('bar_plot', 'figure'),dash.dependencies.Output('Dates', 'children'), dash.dependencies.Output('Urls', 'children')],
     [dash.dependencies.Input('AccountNames', 'value')])
 def update_output(value):
-    print('This account was active from: '+start[value] + " to "+ end[value])
+    #print('This account was active from: '+start[value] + " to "+ end[value])
     return [{
             'data':[traces[value+str(1)], traces[value+str(2)]],
             'layout':
@@ -156,28 +155,93 @@ def update_output(value):
             ]) for url in urls[value]])
     ]
     
+    #---------------------------------------------end page1 layout and callback
+
     
 
 
 page_2_layout = html.Div([
-    html.H1('Page 2'),
-    dcc.RadioItems(
-        id='page-2-radios',
-        options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
-        value='Orange'
-    ),
+    html.H5('Compare data from 2 twitter accounts'),
+    
     html.Div(id='page-2-content'),
     html.Br(),
-    dcc.Link('Go to Page 1', href='/page-1'),
     html.Br(),
-    dcc.Link('Go back to home', href='/')
+    #first graph link
+    html.Div([
+    #dcc.Link('Go back to home', href='/'),
+    dcc.Graph(id='bar_plot1',              
+              figure=go.Figure(data=[traces['NewOrleansON1'], traces['NewOrleansON2']],
+                               layout=go.Layout({"title":'NewOrleansON' , "barmode":'stack'}))
+    
+    )], className = "one columns", style={'padding-left': '100px','height' : '160px', 'width' : '780px'}),
+    
+    html.Div([
+    #dcc.Link('Go back to home', href='/'),
+    dcc.Graph(id='bar_plot2',              
+              figure=go.Figure(data=[traces['DailySanFran1'], traces['DailySanFran2']],
+                               layout=go.Layout({"title":'DailySanFran' , "barmode":'stack'}))
+    
+    )
+    ], className = "two columns", style={'height' : '160px', 'width' : '680px'}),
+    
+    html.Div([dcc.Checklist(
+    id = "selected",
+    options=[{
+                    'label': i,
+                    'value': i
+                } for i in fake_news_accounts],
+    values=['NewOrleansON', 'DailySanFran']
+    )],style={'position':'fixed', 'margin-left':'20px','margin-bottom': '20px'}),
 ])
 
-@app.callback(dash.dependencies.Output('page-2-content', 'children'),
-              [dash.dependencies.Input('page-2-radios', 'value')])
-def page_2_radios(value):
-    return 'You have selected "{}"'.format(value)
-
+@app.callback([dash.dependencies.Output('bar_plot1', 'figure'),dash.dependencies.Output('bar_plot2', 'figure')],
+              [dash.dependencies.Input('selected', 'values')])
+def update_checklist(value):
+    if len(value) == 2 :
+        first = value[0]
+        second = value[1]
+        return [
+    
+        {   
+            'data':[traces[first+str(1)], traces[first+str(2)]],
+            'layout':
+                go.Layout({"title":first , "barmode":'stack'}),        
+        },{
+            'data':[traces[second+str(1)], traces[second+str(2)]],
+            'layout':
+                go.Layout({"title":second , "barmode":'stack'}) 
+        },
+    
+                #html.P(first+' was active from: '+start[first] + " to "+ end[first]),
+                #html.P(second+' was active from: '+start[second] + " to "+ end[second]),
+                #html.Div(
+            #[html.Ul([
+            #html.Li(url[0]+" for "+ str(url[1]) + " times") 
+           # ]) for url in urls[value]])
+        ]
+    else:
+        if len(value) == 1:
+            first = value[0]
+            return [
+    
+        {   
+            'data':[traces[first+str(1)], traces[first+str(2)]],
+            'layout':
+                go.Layout({"title":first , "barmode":'stack'}),        
+        },{   
+            'data': None,
+            'layout':None
+                
+        }
+    
+                #html.P(first+' was active from: '+start[first] + " to "+ end[first]),
+                #html.P(second+' was active from: '+start[second] + " to "+ end[second]),
+                #html.Div(
+            #[html.Ul([
+            #html.Li(url[0]+" for "+ str(url[1]) + " times") 
+           # ]) for url in urls[value]])
+        ]
+        
 
 # Update the index
 @app.callback(dash.dependencies.Output('page-content', 'children'),

@@ -181,27 +181,33 @@
   },
   {
     "fake account name": "DailySanFran",
-    "URL of real websites": "sanantoniopost.com",
+    "URL of real websites": "www.kron4.com",
     "twitter of real website": "sanantoniopost",
-    "Frequency": 352
+    "Frequency": 9881
   },
   {
     "fake account name": "DailySanFran",
-    "URL of real websites": "mysanantonio.com",
+    "URL of real websites": "abc7news.com",
     "twitter of real website": "mySA",
-    "Frequency": 23
+    "Frequency": 3891
   },
   {
     "fake account name": "DailySanFran",
-    "URL of real websites": "ksat.com",
+    "URL of real websites": "sanfrancisco.cbslocal.com",
     "twitter of real website": "ksatnews",
-    "Frequency": 3
+    "Frequency": 3644
   },
   {
     "fake account name": "DailySanFran",
-    "URL of real websites": "nytimes.com",
-    "twitter of real website": "nytimes",
-    "Frequency": 2
+    "URL of real websites": "www.sfgate.com",
+    "twitter of real website": " ",
+    "Frequency": 173
+  },
+  {
+    "fake account name": "DailySanFran",
+    "URL of real websites": "www.sfchronicle.com",
+    "twitter of real website": "sanantoniopost",
+    "Frequency": 52
   },
   {
     "fake account name": "DetroitDailyNew",
