@@ -1,4 +1,5 @@
-import dash
+
+import dash ,dash_table
 import dash_core_components as dcc
 import dash_html_components as html
 # -*- coding: utf-8 -*-
@@ -62,14 +63,15 @@ with open('real_news.json','r') as json_file:
 
 urls = {}
 for account in fake_news_accounts:
-    curr_url = []
+    curr_url = [[],[]]
     for i in range(len(news_urls)):
         if news_urls[i]["fake account name"] == account:
-            curr_url.append((news_urls[i]["URL of real websites"],news_urls[i]["Frequency"]))
+            curr_url[0].append((news_urls[i]["URL of real websites"]))
+            curr_url[1].append(news_urls[i]["Frequency"])
             #print(curr_url)
-    urls[account] = curr_url
-#print(urls['TodayPittsburgh'])
-
+    d = {'col1': curr_url[0], 'col2' : curr_url[1]}
+#    print(curr_url[0])
+    urls[account] = pd.DataFrame(data=d)
 
 
 #--------------------Graph------------------------------
@@ -79,26 +81,38 @@ traces ={}
 for news in fake_news_accounts:
     traces[news+str(1)] = go.Bar(
         x=datelist,
-        y=counters[news][0],
+        y=counters[news][1],
         name='with URLs'
     )
     traces[news+str(2)] = go.Bar(
         x=datelist,
-        y=counters[news][1],
+        y=counters[news][0],
         name='without URLs'
     )
 
 #html and graph components
-
 page_1_layout = html.Div([
     html.H1('IRA Fake Twitter Accounts'),
 
     html.Div(children='''
         Select a fake twitter account name to view information about its activity
     '''),
+    html.Div([
+    dash_table.DataTable(
+    id='url_table',
+    style_table={'maxWidth': '500px'},
+    selected_rows=[0],
+    style_cell = {"fontFamily": "Arial", "size": 10, 'textAlign': 'left'},
+    columns=[
+    {'name': 'URL Domain', 'id': 'col1'},
+    {'name': 'Frequency of Appearance in Tweets', 'id': 'col2'}],
+    data = (urls['NewOrleansON'].to_dict('row'))
+    )
+    ], id='table_container'
+    ),
     html.Div(
     [       
-            dcc.Dropdown(
+            dcc.RadioItems(
                 id="AccountNames",
                 options=[{
                     'label': i,
@@ -139,7 +153,7 @@ page_1_layout = html.Div([
 
 #updating 
 @app.callback(
-    [dash.dependencies.Output('bar_plot', 'figure'),dash.dependencies.Output('Dates', 'children'), dash.dependencies.Output('Urls', 'children')],
+    [dash.dependencies.Output('bar_plot', 'figure'),dash.dependencies.Output('Dates', 'children'), dash.dependencies.Output('table_container', 'children')],
     [dash.dependencies.Input('AccountNames', 'value')])
 def update_output(value):
     #print('This account was active from: '+start[value] + " to "+ end[value])
@@ -149,10 +163,19 @@ def update_output(value):
                 go.Layout(barmode='stack'),        
     },
                 html.P('This account was active from: '+start[value] + " to "+ end[value]),
-                html.Div(
-            [html.Ul([
-            html.Li(url[0]+" for "+ str(url[1]) + " times") 
-            ]) for url in urls[value]])
+                html.Div([
+                dash_table.DataTable(
+                id='url_table',
+                style_table={'maxWidth': '500px'},
+                selected_rows=[0],
+                style_cell = {"fontFamily": "Arial", "size": 10, 'textAlign': 'left'},
+                columns=[
+                {'name': 'URL Domain', 'id': 'col1'},
+                {'name': 'Frequency of Appearance in Tweets', 'id': 'col2'}],
+                data = (urls[value].to_dict('row'))
+                )
+                ], id='table_container'
+    )
     ]
     
     #---------------------------------------------end page1 layout and callback
@@ -248,6 +271,7 @@ def update_checklist(value):
               [dash.dependencies.Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/page-1':
+        print(urls['NewOrleansON'].to_dict('records'))
         return page_1_layout
     elif pathname == '/page-2':
         return page_2_layout
