@@ -54,7 +54,27 @@ for i in range(len(news_dates)):
     start[news_dates[i]['AccountName']] = news_dates[i]['Start']
     end[news_dates[i]['AccountName']] = news_dates[i]['End']
 #print(start,end)
+
+#get account info
+with open('us_accounts.json','r') as json_file:
+        account_info= (json.load(json_file))
+#print(news_urls[0])
+
+accounts = {}
+for account in fake_news_accounts:
+    curr_account = [[],[]]
+    for i in range(len(account_info)):
+        if account_info[i]["user_screen_name"] == account:
+            curr_account[0]=['Account Creation Date','Account Language','Follower Count','Following Count','User Display Name','User Profile Description','User Profile Url','User Reported Location','User ScreenName','User ID']
+            curr_account[1]=[account_info[i]["account_creation_date"],account_info[i]["account_language"],account_info[i]["follower_count"],account_info[i]["following_count"],account_info[i]["user_display_name"],account_info[i]["user_profile_description"],account_info[i]["user_profile_url"],account_info[i]["user_reported_location"],account_info[i]["user_screen_name"],account_info[i]["userid"]]
+    curr_account[0].extend(['Date of First Tweet','Date of Last Tweet'])
+    curr_account[1].extend([start[account],end[account]])
     
+
+    d = {'col1_a': curr_account[0], 'col2_a' : curr_account[1]}
+#    print(curr_url[0])
+    accounts[account] = pd.DataFrame(data=d)
+             
     
 #get real news sources associated with fake accounts
 with open('real_news.json','r') as json_file:
@@ -97,7 +117,32 @@ page_1_layout = html.Div([
     html.Div(children='''
         Select a fake twitter account name to view information about its activity
     '''),
+    #html.Div([
+    #dash_table.DataTable(
+    #id='url_table',
+    #style_table={'maxWidth': '500px'},
+    #selected_rows=[0],
+    #style_cell = {"fontFamily": "Arial", "size": 10, 'textAlign': 'left'},
+    #columns=[
+    #{'name': 'URL Domain', 'id': 'col1'},
+    #{'name': 'Frequency of Appearance in Tweets', 'id': 'col2'}],
+    #data = (urls['NewOrleansON'].to_dict('row'))
+    #)
+    #], id='table_container'
+    #),
+    
+    
     html.Div([
+    dash_table.DataTable(
+    id='info_table',
+    style_table={'maxWidth': '800px','style_as_list_view':True},
+    selected_rows=[0],
+    style_cell = {"fontFamily": "Arial", "size": 10, 'textAlign': 'left'},
+    columns=[
+    {'name': 'Category', 'id': 'col1_a'},
+    {'name': 'Info', 'id': 'col2_a'}],
+    data = (accounts['NewOrleansON'].to_dict('row'))
+    ), 
     dash_table.DataTable(
     id='url_table',
     style_table={'maxWidth': '500px'},
@@ -108,8 +153,15 @@ page_1_layout = html.Div([
     {'name': 'Frequency of Appearance in Tweets', 'id': 'col2'}],
     data = (urls['NewOrleansON'].to_dict('row'))
     )
-    ], id='table_container'
+    ],
+    id='table_container2',style = {
+        'position': 'relative',
+        'top': '30px',
+        'left': '700px'
+    }
     ),
+    
+    
     html.Div(
     [       
             dcc.RadioItems(
@@ -121,17 +173,17 @@ page_1_layout = html.Div([
                 value='NewOrleansON'),
             html.Div(id='page-1-content'),
             html.Br(),
-            html.Div('This account was active from: ',id = "Dates"),
             html.H6("Here are a list of urls that it mentioned most requently in its tweets: "),
             html.Div(id = "Urls"),
             html.H6("Here are a graph showing the monthly distribution of its tweets with urls and without urls: "),
     ],
     style={'width': '25%',
-               'display': 'inline-block'}),
+               'display': 'inline-block','position':'absolute','left':'20px','top':'100px'}),
     
     dcc.Graph(id='bar_plot',
               figure=go.Figure(data=[traces['NewOrleansON1'], traces['NewOrleansON2']],
-                               layout=go.Layout(barmode='stack'))
+                               layout=go.Layout(barmode='stack', yaxis=dict(autorange=False, range=[0, 5000]
+    )))
     
     )
 #    html.Div(
@@ -153,18 +205,25 @@ page_1_layout = html.Div([
 
 #updating 
 @app.callback(
-    [dash.dependencies.Output('bar_plot', 'figure'),dash.dependencies.Output('Dates', 'children'), dash.dependencies.Output('table_container', 'children')],
+    [dash.dependencies.Output('bar_plot', 'figure'),dash.dependencies.Output('table_container2', 'children')],
     [dash.dependencies.Input('AccountNames', 'value')])
 def update_output(value):
     #print('This account was active from: '+start[value] + " to "+ end[value])
     return [{
             'data':[traces[value+str(1)], traces[value+str(2)]],
             'layout':
-                go.Layout(barmode='stack'),        
-    },
-                html.P('This account was active from: '+start[value] + " to "+ end[value]),
-                html.Div([
+                go.Layout(barmode='stack',yaxis=dict(autorange=False, range=[0, 5000]))        
+    },html.Div([
                 dash_table.DataTable(
+                id='info_table',
+                style_table={'maxWidth': '800px'},
+                selected_rows=[0],
+                style_cell = {"fontFamily": "Arial", "size": 10, 'textAlign': 'left','style_as_list_view':True},
+                columns=[
+                {'name': 'Type', 'id': 'col1_a'},
+                {'name': 'Information', 'id': 'col2_a'}],
+                data = (accounts[value].to_dict('row'))
+                ),dash_table.DataTable(
                 id='url_table',
                 style_table={'maxWidth': '500px'},
                 selected_rows=[0],
@@ -174,8 +233,10 @@ def update_output(value):
                 {'name': 'Frequency of Appearance in Tweets', 'id': 'col2'}],
                 data = (urls[value].to_dict('row'))
                 )
-                ], id='table_container'
-    )
+                ], id='table_container2',
+
+    ),
+                
     ]
     
     #---------------------------------------------end page1 layout and callback
